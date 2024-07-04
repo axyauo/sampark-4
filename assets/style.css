@@ -1,0 +1,481 @@
+:root {
+  --color1: #7d0a0a;
+  --color2: #ffc700;
+  --color3: #000240;
+  --color4: #ebf4f6;
+  --color5: #ffffff;
+  --font1: Calibri;
+  --font2: Franklin Gothic Medium;
+}
+body {
+  background-color: var(--color4) !important;
+  font-size: 94.5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+}
+a {
+  color: black;
+  text-decoration: none !important;
+}
+
+/* ----------------------------- Heading CSS ------------------------ */
+.heading-h2 {
+  color: var(--color2);
+  font-size: 2.2em;
+  margin-bottom: 0.7em;
+  font-family: sans-serif;
+}
+.heading-h2 span {
+  color: var(--color1);
+  font-size: 45px;
+  font-family: fantasy;
+  letter-spacing: 2px;
+}
+/* ---------------------------/- Heading CSS ------------------------ */
+/* ****************************************************************** */
+/* ------------------------- Top Navigation CSS --------------------- */
+.top-nav ul li:after {
+  content: "|";
+  padding-left: 15px;
+}
+.top-nav ul li a {
+  color: var(--color5);
+}
+.top-nav ul li {
+  padding: 0;
+  padding-right: 15px;
+}
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 10px 0;
+}
+.bg-color {
+  background: var(--color1);
+  color: var(--color5);
+}
+@media (max-width: 764px) {
+  .top-nav ul li:after {
+    padding-left: 5px;
+  }
+  .top-nav ul li {
+    padding-right: 5px;
+  }
+  .top-nav ul li {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 525px) {
+  .top-nav ul li:after {
+    padding-left: 2px;
+  }
+  .top-nav ul li {
+    padding-right: 2px;
+  }
+  .top-nav ul li {
+    font-size: 12px;
+    padding-right: 8px;
+  }
+}
+@media (max-width: 30px) {
+  .top-nav ul li {
+    font-size: 10px;
+    padding-right: 5px;
+  }
+}
+/* -------------------------/- Top Navigation CSS -------------------- */
+/* ******************************************************************* */
+/* ----------------------------- Navigation CSS ---------------------- */
+.navbar-brand {
+  width: 15%;
+}
+.navbar-brand img {
+  width: 100%;
+  height: auto;
+}
+.navbar {
+  background-color: var(--color2);
+  padding: 1rem;
+}
+.navbar-nav .nav-link {
+  color: var(--color3);
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, background-color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--color5);
+  background-color: var(--color2);
+}
+.navbar-nav .dropdown-menu {
+  background-color: var(--color1);
+  border: none;
+  margin-top: 0;
+}
+.navbar-nav .dropdown-item {
+  color: var(--color5);
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, background-color 0.3s;
+  font-weight: 600;
+}
+.navbar-nav .dropdown-item:hover {
+  color: var(--color5);
+  background-color: var(--color2);
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar-nav .nav-link.active {
+  color: var(--color2) !important;
+}
+.navbar-nav .nav-link.active:hover {
+  color: var(--color5) !important;
+}
+.navbar-nav .nav-link {
+  color: var(--color1);
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    color: var(--color2);
+  }
+}
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 30%;
+  }
+}
+@media (max-width: 425px) {
+  .navbar-brand {
+    width: 40%;
+  }
+}
+/* ---------------------------/- Navigation CSS ---------------------- */
+/* ******************************************************************* */
+/* ------------------------------ Carousel CSS ----------------------- */
+.carousel-item img {
+  width: 100%;
+  height: 550px;
+}
+.carousel-caption p {
+  top: 20%;
+  font-size: 55px;
+  font-weight: 900;
+  color: var(--color5);
+  width: 70%;
+  margin: auto;
+}
+.carousel-indicators [data-bs-target] {
+  position: relative;
+  top: -100px;
+}
+.carousel-caption {
+  background: rgb(0 0 0 / 50%);
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  display: flex;
+  align-content: center;
+}
+@media (max-width: 625px) {
+  .carousel-item img {
+    height: 300px;
+  }
+  .carousel-caption p {
+    font-size: 26px;
+    width: 100%;
+    top: -50px !important;
+    position: relative;
+  }
+  .carousel-indicators [data-bs-target] {
+    top: -60px;
+  }
+}
+/* ----------------------------/- Carousel CSS ----------------------- */
+/* ******************************************************************* */
+/* ---------------------------- Intro-section CSS -------------------- */
+.intro-section {
+  background: var(--color1);
+  color: var(--color5);
+  padding: 3em 0px;
+  border-radius: 0 6em 0 0;
+  margin-top: -5em;
+  position: relative;
+  right: 0;
+  left: 0;
+}
+.intro-content {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.intro-content p {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+}
+.btn1 {
+  padding: 1em 2.5em;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--color1) !important;
+  transition: background 0.5s ease, color 0.5s ease, transform 0.5s ease;
+  border: 2px solid var(--color5);
+  background: var(--color5);
+}
+.btn1:hover {
+  background: var(--color1);
+  color: var(--color5) !important;
+  transform: translateY(-10px);
+}
+@media (max-width: 625px) {
+  .intro-section {
+    padding: 2em 0px;
+    border-radius: 0 5em 0 0;
+  }
+  .intro-content p {
+    font-size: 18px;
+  }
+  .btn1 {
+    padding: 0.7em 1.5em;
+    border-radius: 10px;
+  }
+}
+/* -------------------------/- Intro-section CSS --------------------- */
+/* ******************************************************************* */
+/* ----------------------- Introductory-section CSS ------------------ */
+.introductory-img {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.decorative-pattern {
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  width: 80%;
+  height: 90%;
+  background-image: url(./images/dot-pattern-img.png);
+  background-size: cover;
+}
+.image-container {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+.button-container {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+}
+.mission-button {
+  background-color: var(--color1);
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.mission-button:hover {
+  background-color: var(--color2);
+}
+.decorative-pattern-1 {
+  position: absolute;
+  top: -30px;
+  right: -40px;
+  width: 80%;
+  height: 90%;
+  background-image: url(./images/dot-pattern-img.png);
+  background-size: cover;
+}
+.button-container-1 {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+}
+.for-margin {
+  margin: 7em 0;
+}
+@media (max-width: 625px) {
+  .decorative-pattern-1 {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 90%;
+  }
+}
+/* ---------------------/- Introductory-section CSS ------------------ */
+/* ******************************************************************* */
+.rotate-div {
+  background: url(images/rotate-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 290px;
+}
+.rotate-div2 {
+  background: url(images/rotate-img1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+/* ******************************************************************* */
+/* ------------------------- Chalange-section CSS -------------------- */
+.challenge-img img {
+  width: 100%;
+  height: auto;
+}
+.challenge-content i {
+  font-size: 50px;
+  color: #abaeaf;
+}
+.challenge-content h3 {
+  color: var(--color1);
+  margin-bottom: 25px;
+  line-height: 1.3;
+}
+.challenge-content h3 span {
+  font-weight: 900;
+  color: var(--color2);
+}
+/* -----------------------/- Chalange-section CSS -------------------- */
+/* ******************************************************************* */
+/* ---------------------------- CTA-section CSS ---------------------- */
+.bg-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/BG-IMG.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1em;
+  color: var(--color5);
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.cta.border {
+  border: none !important;
+  border-right: 2px solid var(--color5) !important;
+}
+.cta h2 {
+  font-weight: 900;
+  font-size: 3em;
+}
+.cta p {
+  font-size: 20px;
+}
+/* --------------------------/- CTA-section CSS ---------------------- */
+/* ******************************************************************* */
+/* -------------------------- Stay-Connected CSS --------------------- */
+.stay-conn-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  min-height: 100%;
+}
+.stay-conn-img {
+  height: 230px;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.stay-conn-img:hover img {
+  transform: scale(1.09);
+}
+.connected h2 {
+  font-size: 3em;
+}
+.connected {
+  text-align: center;
+}
+
+.connected h2 span {
+  color: var(--color1);
+  font-weight: 800;
+}
+/* ------------------------/- Stay-Connected CSS --------------------- */
+/* ******************************************************************* */
+/* ------------------------------ Footer CSS ------------------------- */
+.footer {
+  background-color: var(--color1);
+  color: #fff;
+}
+
+.footer h5,
+.footer h6 {
+  font-weight: bold;
+}
+.footer-logo img {
+  width: 100%;
+  background: var(--color5);
+  padding: 20px;
+  border-radius: 10px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+.footer .list-inline-item a {
+  padding: 0 10px;
+  border-right: 1px solid #ddd;
+}
+
+.footer .list-inline-item:last-child a {
+  border-right: none;
+}
+
+.footer .social-icons a {
+  font-size: 20px;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #ccc;
+}
+
+.footer .img-fluid {
+  max-width: 50px;
+}
+
+hr {
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .footer .text-lg-end {
+    text-align: center !important;
+  }
+  .footer .list-inline {
+    text-align: center;
+  }
+}
+/* ----------------------------/- Footer CSS ------------------------- */
+/* ******************************************************************* */
