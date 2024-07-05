@@ -41,7 +41,7 @@
         <div class="container">
             <div class="intro-content">
                 <p>The Sampark project is a joint initiative led by the partnership between UNICEF and XISS-Ranchi. It started in 2021 covering various issues including promotion of COVID appropriate behaviours, vaccine promotion, and ending child marriage and violence against children along. It has also provided support to different government initiatives on nutrition and health. </p>
-                <a href="javascript: void"><button class="btn1">See Our Impact</button></a>
+                <a href="under-process.php"><button class="btn1">See Our Impact</button></a>
             </div>
         </div>
     </section>
@@ -123,14 +123,14 @@
                     <div class="cta border">
                         <h2>Get In Touch</h2>
                         <p>Accessible, nonjudgemental support is available to you.</p>
-                        <a href="javascript: void"><button class="btn1">Contact Us</button></a>
+                        <a href="under-process.php"><button class="btn1">Contact Us</button></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-12">
                     <div class="cta">
                         <h2>Donate</h2>
                         <p>Build a stronger regional economy, invest in small business owners.</p>
-                        <a href="javascript: void"><button class="btn1">Donate</button></a>
+                        <a href="under-process.php"><button class="btn1">Donate</button></a>
                     </div>
                 </div>
             </div>
@@ -185,6 +185,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="view-btn text-center">
+                <a href="gallery.php"><button class="btn1 border">View More</button></a>
             </div>
         </div>
     </section>
